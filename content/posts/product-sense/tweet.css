@@ -1,0 +1,40 @@
+.tweet {
+    padding:6px 0px;
+    max-width: 500px;
+    position: relative;
+}
+.tweet:before {
+    content: '';
+    height: 5px;
+    width: 150px;
+    background: linear-gradient(to right,rgb(59 169 238),rgb(59 169 238 / 0%));
+    position: absolute;
+    left: -15px;
+}
+.tweet h1 {
+    margin-bottom: 0;
+    position: relative;
+    line-height: 32px;
+}
+.tweet h1 span {
+    position:absolute;
+    left:-15px;
+    top:-3px;
+}
+.tweet a {
+    text-decoration: none;
+    color:rgb(59, 169, 238);
+    font-weight: 700;
+}
+.tweet svg {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 4px;
+    right: 2px;
+}
+.tweet a p{
+    text-align: right;
+    margin-top: 0;
+    margin-right:24px;
+}
