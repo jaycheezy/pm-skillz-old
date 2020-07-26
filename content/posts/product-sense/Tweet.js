@@ -11,11 +11,17 @@ export default function Tweet(props) {
       ></path>
       </svg>
   );
+  const linkArrow = (
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 -15 30 100" xmlSpace="preserve">
+        <polyline fill="none" stroke="#3BA9EE" strokeWidth={10} strokeLinecap="round" strokeLinejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 " />
+      </svg>
+);
   
   return (
     <div className="tweet">
         <h1><span>“</span>{props.tweetText}”</h1>
-        <a href={props.tweetLink} target="_blank" rel="noreferrer"><p>{twitterIcon}{props.tweeter}</p></a>
+        <p><a href={props.tweetLink} target="_blank" rel="noreferrer">{twitterIcon}{props.tweeter}{linkArrow}</a></p>
     </div>
   )
 }
